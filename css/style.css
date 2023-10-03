@@ -1,0 +1,125 @@
+/* Common css Starts */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primaryfont : 'Poppins', sans-serif;
+    --secondaryfont : 'PT Sans', sans-serif;
+    --primarycolor :  #FC0;
+    --secondarycolor : #353535;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p,span,ul,ol{
+    margin: 0;
+    padding: 0;
+
+
+}
+body{
+    font-family: var(--primaryfont);
+}
+.button{
+    border-radius: 20px;
+    background: var(--primarycolor);
+    color: #FFF;
+    font-family: var(--primaryfont);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 180%; /* 36px */
+    padding: 16px 45px;
+    display: inline-block;
+}
+.button span{
+    margin-left: 11px;
+    
+}
+.button.outlinebtn{
+    background-color: transparent;
+    color: var(--secondarycolor);
+    border: 1px solid #000;
+}
+/* Common css End */
+/* navbar starts */
+nav{
+    background: #FFF;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+    padding: 16px !important;
+}
+#customNav ul li a{
+    color: var(--secondarycolor);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 200%; /* 30px */
+    padding: 18px 22px 5px;
+    display: block;
+    text-transform: uppercase;
+    position: relative;
+
+}
+#customNav ul li a::before{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: var(--secondarycolor);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+}
+#customNav ul li:hover a::before{
+    width: 100%;
+}
+nav .navbar-toggler{
+    border: none;
+}
+nav .navbar-toggler:focus{
+    box-shadow: none;
+}
+/* navbar end */
+/* hero section starts */
+
+#hero .hero_cnt h4{
+    color: var(--secondarycolor);
+font-family: var(--primaryfont);
+font-size: 24px;
+font-weight: 400;
+
+}
+#hero .hero_cnt h4 span{
+    color: var(--primarycolor);
+    font-size: 32px;
+    margin-left: 38px;
+}
+#hero .hero_cnt h1{
+    color: var(--secondarycolor);
+font-family: var(--secondaryfont);
+font-size: 64px;
+margin: 15px 0 25px;
+
+font-weight: 700;
+line-height: normal;
+}
+#hero .hero_cnt p{
+    color: var(--secondarycolor);
+    font-family: var(--primaryfont);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 180%; /* 36px */
+    margin-bottom: 45px;
+}
+.hero_cnt a{
+    margin-right: 30px;
+}
+/* hero section end */
